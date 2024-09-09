@@ -25,6 +25,22 @@ module.exports = {
             }
         },
     },
-    plugins: [],
+    plugins: [
+    function ({ addUtilities, theme, e }) {
+      const gradients = theme('backgroundImage');
+      const utilities = Object.keys(gradients).reduce((acc, key) => {
+        acc[`.${e(`after-bg-${key}`)}::after`] = {
+          content: '""',
+          position: 'absolute',
+          inset: 0,
+          backgroundImage: gradients[key],
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+        };
+        return acc;
+      }, {});
+      addUtilities(utilities, ['before', 'after']);
+    },
+  ],
 }
 
