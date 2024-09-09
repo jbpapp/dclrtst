@@ -1,0 +1,9 @@
+/*
+Theme Name: DCLR
+Author: Janos Papp
+Description: A custom WordPress theme using Vite and Tailwind CSS.
+Version: 1.0
+*/
+body {
+    color: blue;
+}

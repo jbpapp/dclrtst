@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="40px" height="40px" viewBox="0 0 40 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Rectangle</title>
+    <defs>
+        <linearGradient x1="49.8019559%" y1="99.8019559%" x2="49.8019559%" y2="0.198044143%" id="linearGradient-1">
+            <stop stop-color="#950000" offset="0%"></stop>
+            <stop stop-color="#FF2626" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="FetishFix--Desktop---Landing-page-Design" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop_LP_Home" transform="translate(-700.000000, -3060.000000)" fill="url(#linearGradient-1)">
+            <g id="Section2" transform="translate(0.000000, 2208.000000)">
+                <rect id="Rectangle" x="700" y="852" width="40" height="40" rx="8"></rect>
+            </g>
+        </g>
+    </g>
+</svg>
