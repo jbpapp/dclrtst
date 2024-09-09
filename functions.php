@@ -1,5 +1,18 @@
 <?php
 
+/**
+ * Add support for dinamically generate the page's title tag.
+ */
+add_action('after_setup_theme', function () {
+    add_theme_support('title-tag');
+});
+
+/**
+ * Enqueue the necessary scripts.
+ * If the site's environment is set to `development`, we will use the leverage of Vitejs to
+ * automatically reload the page if a file changes.
+ * Otherwise we are using the the built scripts.
+ */
 add_action('wp_enqueue_scripts', function () {
     if (defined('WP_ENV') && WP_ENV === 'development') {
         wp_enqueue_script('vite-client', home_url() . ':5173/@vite/client', [], null, true);
@@ -21,6 +34,9 @@ add_action('wp_enqueue_scripts', function () {
     }
 });
 
+/**
+ * Add type="module" for those script that requires it.
+ */
 add_filter('script_loader_tag', function ($tag, $handle, $src) {
     if (in_array($handle, ['vite-client', 'dclr-scripts-js'])) {
         return '<script type="module" src="' . esc_url($src) . '"></script>';
@@ -28,6 +44,9 @@ add_filter('script_loader_tag', function ($tag, $handle, $src) {
     return $tag;
 }, 10, 3);
 
+/**
+ * Determine the proper url of a compiled asset file.
+ */
 if (! function_exists('get_vite_asset_url')) {
     function get_vite_asset_url($entry, $type = 'js')
     {
