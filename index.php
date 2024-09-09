@@ -78,7 +78,7 @@
             <p class="text-[22px] leading-[32px] mb-8">Curabitur varius ut risus quis congue. Nulla scelerisque, massa et blandit efficitur, neque turpis auctor ex, quis dapibus arcu ligula nec urna. Curabitur nec rhoncus risus.</p>
         </div>
 
-        <div class="container mx-auto mb-8 lg:mb-0 lg:flex items-center relative z-30 after:hidden lg:after:block after:w-[40px] after:h-[40px] after:absolute after:bottom-0 after:left-1/2 after:bg-[red] after:-ml-[20px] after:-mb-[20px] after:rounded">
+        <div class="container mx-auto mb-8 lg:mb-0 lg:flex items-center relative z-30 after:hidden lg:after:block after:w-[40px] after:h-[40px] after:absolute after:bottom-0 after:left-1/2 after:bg-gradient-360 after:from-[#950000] after:from-[0.2%] after:to-[#FF2626] after:to-[99.8%] after:-ml-[20px] after:-mb-[20px] after:rounded">
             <div class="relative z-40 w-full lg:w-1/2 mb-8 lg:mb-0">
                 <img src="/wp-content/themes/dclr/images/Becomeamodel_image_1.jpg" alt="" class="lg:rounded-r w-full" />
             </div>
@@ -90,7 +90,7 @@
             </div>
         </div>
 
-        <div class="container mx-auto mb-8 lg:mb-0 lg:flex items-center relative z-20 after:hidden lg:after:block after:w-[40px] after:h-[40px] after:absolute after:bottom-0 after:left-1/2 after:bg-[red] after:-ml-[20px] after:-mb-[20px] after:rounded">
+        <div class="container mx-auto mb-8 lg:mb-0 lg:flex items-center relative z-20 after:hidden lg:after:block after:w-[40px] after:h-[40px] after:absolute after:bottom-0 after:left-1/2 after:bg-gradient-360 after:from-[#950000] after:from-[0.2%] after:to-[#FF2626] after:to-[99.8%] after:-ml-[20px] after:-mb-[20px] after:rounded">
             <div class="relative z-40 w-full lg:w-1/2 mb-8 lg:mb-0 lg:order-2">
                 <img src="/wp-content/themes/dclr/images/Becomeamodel_image_2.jpg" alt="" class="lg:rounded-l w-full" />
             </div>
